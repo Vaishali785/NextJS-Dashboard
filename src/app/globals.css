@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar {
+	width: 100% !important;
+	font-family: "Inter", sans-serif !important;
+	border: none !important;
+}
+
+.react-calendar__tile--now {
+	background: #fae27c !important;
+	color: black !important;
+}
+
+.react-calendar__tile--active {
+	background-color: #c3ebfa !important;
+	color: black !important;
+}
+
+.calendar__navigation__label__labelText {
+	font-weight: 600;
+}
+
+.rbc-btn-group:first-child {
+	display: none;
+}
+
+.rbc-toolbar-label {
+	text-align: right !important ;
+	padding: 0 20px !important;
+}
+
+.rbc-btn-group:last-child {
+	font-size: 13px !important;
+}
+.rbc-btn-group:last-child button {
+	border: none !important;
+	background-color: #f1f0ff !important;
+	margin-left: 2px !important;
+}
+
+.rbc-btn-group:last-child .rbc-active {
+	background-color: #dbdafe !important;
+	box-shadow: none;
+}
+
+.rbc-time-view {
+	border-color: #eee !important;
+}
+
+.rbc-time-header {
+	display: none !important;
+}
+
+.rbc-time-content {
+	border: none !important;
+}

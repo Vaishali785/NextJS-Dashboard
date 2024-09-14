@@ -50,7 +50,7 @@ const AttendanceChart = () => {
 				<Image src="/moreDark.png" alt="" width={20} height={20} />
 			</div>
 			<div className="w-full h-full">
-				<ResponsiveContainer>
+				<ResponsiveContainer width="100%" height="90%">
 					<BarChart width={500} height={300} data={data} barSize={20}>
 						<CartesianGrid
 							strokeDasharray="3 3"
@@ -64,6 +64,7 @@ const AttendanceChart = () => {
 							tick={{ fill: "#d1d5db", fontSize: "14px" }}
 						/>
 						<YAxis
+							width={25}
 							axisLine={false}
 							tickLine={false}
 							tick={{ fill: "#d1d5db", fontSize: "14px" }}
