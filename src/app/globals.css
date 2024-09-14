@@ -27,6 +27,7 @@
 }
 
 .rbc-toolbar-label {
+	font-size: 14px !important;
 	text-align: right !important ;
 	padding: 0 20px !important;
 }
@@ -46,13 +47,104 @@
 }
 
 .rbc-time-view {
+	margin-top: 10px;
 	border-color: #eee !important;
 }
 
-.rbc-time-header {
+.rbc-allday-cell {
 	display: none !important;
 }
 
 .rbc-time-content {
 	border: none !important;
+}
+
+.rbc-time-gutter.rbc-time-column {
+	font-size: 12px !important;
+}
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+	padding: 0 20px !important;
+}
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group .rbc-time-slot:last-child {
+	display: none !important;
+}
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group .rbc-time-slot {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.rbc-timeslot-group,
+.rbc-time-header {
+	background-color: #f7fdff !important;
+}
+
+.rbc-day-slot {
+	font-size: 14px !important;
+}
+
+.rbc-event {
+	color: black !important;
+	border: none !important;
+	padding: 5px !important;
+}
+
+.rbc-event:nth-child(1) {
+	background-color: #e2f8ff !important;
+}
+.rbc-event:nth-child(2) {
+	background-color: #fefce8 !important;
+}
+.rbc-event:nth-child(3) {
+	background-color: #f2f1ff !important;
+}
+.rbc-event:nth-child(4) {
+	background-color: #fdf2fb !important;
+}
+.rbc-event:nth-child(5) {
+	background-color: #e2f8ff !important;
+}
+.rbc-event:nth-child(6) {
+	background-color: #fefce8 !important;
+}
+.rbc-event:nth-child(7) {
+	background-color: #f2f1ff !important;
+}
+.rbc-event:nth-child(8) {
+	background-color: #fdf2fb !important;
+}
+
+.rbc-event-label {
+	color: gray !important;
+	margin-bottom: 5px;
+}
+
+.rbc-events-container {
+	margin-right: 0 !important;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+	.rbc-events-container .rbc-event {
+		flex-direction: row !important;
+		min-height: fit-content !important;
+	}
+	.rbc-event-content {
+		min-height: fit-content !important;
+	}
+
+	.rbc-calendar {
+		min-height: 85vh;
+	}
+	.rbc-toolbar {
+		flex-direction: row !important;
+		justify-content: space-between !important;
+		margin-block: 10px !important;
+	}
+
+	.rbc-toolbar-label {
+		flex: none !important;
+		padding-left: 0 !important;
+	}
 }
