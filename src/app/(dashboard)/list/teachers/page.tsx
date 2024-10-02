@@ -29,7 +29,7 @@ const TeachersListPage = () => {
 		return (
 			<tr
 				key={item.id}
-				className="border-b border-gray-200 pl- even:bg-slate-50 hover:bg-lamaPurpleLight"
+				className="border-b border-gray-200 pl- even:bg-slate-50 hover:bg-lamaPurpleLight cursor-pointer"
 			>
 				<td className="flex gap-4 p-4 items-center">
 					<Image
@@ -41,7 +41,7 @@ const TeachersListPage = () => {
 					/>
 					<div className="flex flex-col">
 						<h3 className="font-semibold">{item.name}</h3>
-						<p className="text-xs text-gray-500">{item.email}</p>
+						<p className="text-xs text-gray-500">{item?.email}</p>
 					</div>
 				</td>
 				<td className="hidden md:table-cell text-xs">{item.teacherId}</td>
