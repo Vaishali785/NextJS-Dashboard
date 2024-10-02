@@ -1,0 +1,6 @@
+{
+	"workbench.editor.labelFormat": "default",
+	"workbench.editor.untitled.labelFormat": "content",
+	"workbench.editor.customLabels.enabled": true,
+	"editor.suggest.showCustomcolors": true
+}
