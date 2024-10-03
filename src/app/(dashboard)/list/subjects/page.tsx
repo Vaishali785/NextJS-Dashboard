@@ -25,7 +25,7 @@ const SubjectListPage = () => {
 		return (
 			<tr
 				key={item.id}
-				className="border-b border-gray-200 pl- even:bg-slate-50 hover:bg-lamaPurpleLight cursor-pointer"
+				className="border-b border-gray-200 pl- even:bg-slate-50 hover:bg-lamaPurpleLight"
 			>
 				<td className="flex gap-4 p-4 items-center">{item.name}</td>
 				<td className="hidden md:table-cell text-xs">

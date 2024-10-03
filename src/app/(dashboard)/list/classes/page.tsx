@@ -31,7 +31,7 @@ const ClassListPage = () => {
 		return (
 			<tr
 				key={item.id}
-				className="border-b border-gray-200 pl- even:bg-slate-50 hover:bg-lamaPurpleLight cursor-pointer"
+				className="border-b border-gray-200 pl- even:bg-slate-50 hover:bg-lamaPurpleLight"
 			>
 				<td className="flex gap-4 p-4 items-center text-sm">{item.name}</td>
 
